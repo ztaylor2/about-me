@@ -50,3 +50,37 @@ if (major === 'YES' || major === 'Y') {
   alert('Please enter either Yes/No or Y/N');
   console.log('the user\'s input was invalid');
 }
+
+// fourth question
+var eyeColor = prompt('Do I have blue eyes?');
+eyeColor = eyeColor.toUpperCase();
+console.log('the user answered ' + eyeColor + 'to do i have blue eyes')
+
+// reaction to fourth question
+if (eyeColor === 'YES' || eyeColor === 'Y') {
+  alert('You are incorrect :/.  My eyes are actually hazel.');
+  console.log('the user answered incorrectly');
+} else if (eyeColor === 'NO' || eyeColor === 'N') {
+  alert('You are correct! My eyes are hazel! :-)');
+  console.log('the user answered correcly');
+} else {
+  alert('Please answer either Y/N.  Thanks!');
+  console.log('The user\'s input was invalid');
+}
+
+// fifth question
+var interests = prompt('Am I interested in aquiring a software engineering job in the Seattle area after graduating from Code Fellows?');
+interests = interests.toUpperCase();
+console.log('the user\'s answer was ' + interests);
+
+// reaction to fifth question
+if (interests === 'YES' || interests === 'Y') {
+  alert('You are correct!! Of course I want a software engineering job after graduating from Code Fellows.  Please hire me!');
+  console.log('the user was correct');
+} else if (interests === 'NO' || interests === 'N') {
+  alert('That\'s incorrect :/.  I do want a software engineering job after graduating from Code Fellows.');
+  console.log('the user was incorrect');
+} else {
+  alert('Please enter either Yes/No or Y/N.  Thank you!');
+  console.log('the user did not submit a valid input');
+}
