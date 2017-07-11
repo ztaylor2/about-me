@@ -1,19 +1,27 @@
 'use strict';
 
-// ask a question and store the answer as a variable
+// score variables
+var numCorrect = 0;
+var numIncorrect = 0;
+var numInvalid = 0;
+
+// ask first question then store the answer as a variable and set to upper case
 var age = prompt('Am I 22 years old?');
 age = age.toUpperCase();
 console.log('the users input was ' + age);
 
-// react to the user's answer to the question
+// react to the user's answer to first question
 if (age === 'YES' || age === 'Y') {
-  alert('That is correct! I am 22 years young.');
+  numCorrect++;
+  alert('That is correct! I am 22 years young. \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user was correct');
 } else if (age === 'NO' || age === 'N') {
-  alert('You are incorrect... I am infact 22 years young.');
+  numIncorrect++;
+  alert('You are incorrect... I am infact 22 years young. \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user was incorrect');
 } else {
-  alert('Please enter yes/no.  Thank you!');
+  numInvalid++;
+  alert('Please enter yes/no.  Thank you! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user did not input either yes or no');
 }
 
@@ -24,13 +32,16 @@ console.log('the user guessed ' + birthPlace + ' when asked if I was born in Mia
 
 // reaction to second question
 if (birthPlace === 'YES' || birthPlace === 'Y') {
-  alert('That is incorrect.  I was actually born in Seattle. :/');
+  numIncorrect++;
+  alert('That is incorrect.  I was actually born in Seattle. :/ \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user was incorrect');
 } else if (birthPlace === 'NO' || birthPlace === 'N') {
-  alert('That is correct! I wasn\'t born in Miami, I was born in Seattle. :-)');
+  numCorrect++;
+  alert('That is correct! I wasn\'t born in Miami, I was born in Seattle. :-)\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user was correct');
 } else {
-  alert('Please input a response of either yes/no or y/n.  Thank you!')
+  numInvalid++;
+  alert('Please input a response of either yes/no or y/n.  Thank you! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid)
   console.log('the user did not input yes/no or y/n');
 }
 
@@ -41,13 +52,16 @@ console.log('the user answered ' + major + ' to did I major in ME at GU');
 
 // reaction to third question
 if (major === 'YES' || major === 'Y') {
-  alert('That is correct.  I did graduate from Gonzaga University with a Mechanical Engineering degree.');
+  numCorrect++;
+  alert('That is correct.  I did graduate from Gonzaga University with a Mechanical Engineering degree.\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user was correct');
 } else if (major === 'NO' || major === 'N') {
-  alert('That is incorrect.  I actually did recieve a degree in Mechanical Engineering from Gonzaga University.');
+  numIncorrect++;
+  alert('That is incorrect.  I actually did recieve a degree in Mechanical Engineering from Gonzaga University.\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user\'s answer was incorrect')
 } else {
-  alert('Please enter either Yes/No or Y/N');
+  numInvalid++;
+  alert('Please enter either Yes/No or Y/N\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user\'s input was invalid');
 }
 
@@ -58,13 +72,16 @@ console.log('the user answered ' + eyeColor + 'to do i have blue eyes')
 
 // reaction to fourth question
 if (eyeColor === 'YES' || eyeColor === 'Y') {
-  alert('You are incorrect :/.  My eyes are actually hazel.');
+  numIncorrect++;
+  alert('You are incorrect :/.  My eyes are actually hazel.\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user answered incorrectly');
 } else if (eyeColor === 'NO' || eyeColor === 'N') {
-  alert('You are correct! My eyes are hazel! :-)');
+  numCorrect++;
+  alert('You are correct! My eyes are hazel! :-) \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user answered correcly');
 } else {
-  alert('Please answer either Y/N.  Thanks!');
+  numInvalid++;
+  alert('Please answer either Y/N.  Thanks! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('The user\'s input was invalid');
 }
 
@@ -75,12 +92,15 @@ console.log('the user\'s answer was ' + interests);
 
 // reaction to fifth question
 if (interests === 'YES' || interests === 'Y') {
-  alert('You are correct!! Of course I want a software engineering job after graduating from Code Fellows.  Please hire me!');
+  numCorrect++;
+  alert('You are correct!! Of course I want a software engineering job after graduating from Code Fellows.  Please hire me! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user was correct');
 } else if (interests === 'NO' || interests === 'N') {
-  alert('That\'s incorrect :/.  I do want a software engineering job after graduating from Code Fellows.');
+  numIncorrect++;
+  alert('That\'s incorrect :/.  I do want a software engineering job after graduating from Code Fellows. \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user was incorrect');
 } else {
-  alert('Please enter either Yes/No or Y/N.  Thank you!');
+  numInvalid++;
+  alert('Please enter either Yes/No or Y/N.  Thank you! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user did not submit a valid input');
 }
