@@ -1,6 +1,6 @@
 'use strict';
 
-// score variables
+// declare score variables
 var numCorrect = 0;
 var numIncorrect = 0;
 var numInvalid = 0;
@@ -104,3 +104,8 @@ if (interests === 'YES' || interests === 'Y') {
   alert('Please enter either Yes/No or Y/N.  Thank you! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   console.log('the user did not submit a valid input');
 }
+
+//calculate and display final score
+var score = numCorrect / (numCorrect + numInvalid + numIncorrect) * 100;
+alert('Final Score: ' + score + '%');
+console.log('the user scored a ' + score + '%');
