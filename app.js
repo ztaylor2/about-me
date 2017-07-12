@@ -8,6 +8,7 @@ function quiz() {
   var numIncorrect = 0;
   var numInvalid = 0;
 
+
   // first question.  repeat the question until it is answered properly
   var answered = false;
   while (answered === false) {
@@ -35,6 +36,7 @@ function quiz() {
     }
 
   }
+
 
   // second question
   answered = false;
@@ -64,6 +66,7 @@ function quiz() {
 
   }
 
+
   // third question
   answered = false;
   while (answered === false) {
@@ -91,6 +94,7 @@ function quiz() {
     }
 
   }
+
 
   // fourth question
   var answered = false;
@@ -120,6 +124,7 @@ function quiz() {
 
   }
 
+
   // fifth question
   var answered = false;
   while (answered === false) {
@@ -148,6 +153,7 @@ function quiz() {
 
   }
 
+
   // sixth question
   var correct = false;
   var n = Math.round(Math.random()*(20-1)+1);
@@ -156,6 +162,7 @@ function quiz() {
 
   // respond to sixth question
   while (i <= 3 && correct === false) {
+    
     var ans = parseInt(prompt('Guess a number between 1-20. \n\n You have ' + (4 - i) + ' tries left.'));
     console.log('the user guessed ' + ans);
 
@@ -184,9 +191,45 @@ function quiz() {
     alert('Your tries are up... \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
   }
 
+
+  //seventh question
+  var myAns = ['zach', 'sam', 'jeff'];
+  console.log(myAns.length);
+
+  var x = 0;
+  var correct = false;
+
+  while (x <= 5 && correct === false) {
+
+    var ans = prompt('Guess the one of the names of my three brothers.  \n\nYou have ' + (6 - x) + ' guesses.');
+
+    for(var i = 0; i < myAns.length; i++) {
+      if (ans === myAns[i]) {
+        correct = true;
+        // alert('correct');
+        console.log('correct guess');
+      }
+    }
+
+    if (correct === true) {
+      numCorrect++;
+      alert('Correct! \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      console.log('correct');
+    } else if (x === 5) {
+      numIncorrect++;
+      alert('Out of guesses. \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      console.log('done');
+    } else {
+      alert('Incorrect, guess again. \n\nYou have ' + (5 - x) + ' guesses left.');
+      console.log('incorrect');
+    }
+
+    x++;
+  }
+
   //calculate and display final score
   var score = numCorrect / (numCorrect + numIncorrect) * 100;
   alert('Nice work!\n\nFinal Score: ' + score + '% \nInvalid Responses: ' + numInvalid);
   console.log('the user scored a ' + score + '%');
 
-}
+ }
