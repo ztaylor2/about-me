@@ -148,6 +148,42 @@ function quiz() {
 
   }
 
+  // sixth question
+  var correct = false;
+  var n = Math.round(Math.random()*(20-1)+1);
+  console.log('number: ' + n);
+  var i = 0;
+
+  // respond to sixth question
+  while (i <= 3 && correct === false) {
+    var ans = parseInt(prompt('Guess a number between 1-20. \n\n You have ' + (4 - i) + ' tries left.'));
+    console.log('the user guessed ' + ans);
+
+    if (i === 3) {
+      numIncorrect++;
+      console.log('done');
+    } else if (ans === n) {
+      numCorrect++;
+      alert('Correct! \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      console.log('correct');
+      correct = true;
+    } else if (ans > n) {
+      alert('Too high.\n\nGuess again.');
+      console.log('too high');
+    } else {
+      alert('Too low.\n\nGuess again.');
+      console.log('too low');
+    }
+
+    i++;
+    console.log('number of tries: ' + i + '/4');
+  }
+
+  // notification if never gets sixth question right
+  if (correct === false) {
+    alert('Your tries are up... \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+  }
+
   //calculate and display final score
   var score = numCorrect / (numCorrect + numIncorrect) * 100;
   alert('Nice work!\n\nFinal Score: ' + score + '% \nInvalid Responses: ' + numInvalid);
