@@ -1,5 +1,8 @@
 'use strict';
 
+// function justed used for button, not for writing less code 
+function quiz() {
+
 // declare score variables
 var numCorrect = 0;
 var numIncorrect = 0;
@@ -109,3 +112,5 @@ if (interests === 'YES' || interests === 'Y') {
 var score = numCorrect / (numCorrect + numInvalid + numIncorrect) * 100;
 alert('Final Score: ' + score + '%');
 console.log('the user scored a ' + score + '%');
+
+}

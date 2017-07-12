@@ -7,6 +7,7 @@ h1 {
   font-weight: lighter;
   font-size: 40px;
   text-decoration: underline;
+  color: #5998ff;
 }
 
 main {
@@ -16,4 +17,28 @@ main {
 
 p {
   text-indent: 30px;
+  text-align: justify;
+}
+
+p.button {
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: #5998ff;
+  text-decoration: none;
+  padding: 20px 50px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #5998ff;
+}
+
+button:hover {
+  background-color: #5998ff;
+  color: white;
+  border-color: white;
+  transition-duration: .5s;
+  border: 2px solid #5998ff;
 }
