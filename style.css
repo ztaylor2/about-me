@@ -13,11 +13,11 @@ ul.navBar {
   overflow: hidden;
 }
 
-li h1 {
+ul.navBar li h1 {
   float: left;
 }
 
-li a {
+ul.navBar li a {
   float: right;
   display: block;
   padding: 25px 20px;
@@ -27,11 +27,11 @@ li a {
   font-weight: lighter;
 }
 
-li h1 a {
+ul.navBar li h1 a {
   border-left: none;
 }
 
-li a:hover {
+ul.navBar li a:hover {
   background-color: #5998ff;
 }
 
@@ -42,14 +42,10 @@ h1 {
   color: #5998ff;
 }
 
-main {
-  width: 50%;
-  margin: auto;
-}
-
 p {
   text-indent: 30px;
   text-align: justify;
+  padding: 20px;
 }
 
 p.button {
@@ -73,4 +69,28 @@ button:hover {
   border-color: white;
   transition-duration: .5s;
   border: 2px solid #5998ff;
+}
+
+main {
+  width: 60%;
+  float: left;
+}
+
+aside {
+  width: 40%;
+  float: left;
+}
+
+h2 {
+  text-align: center;
+  font-weight: lighter;
+  padding: 20px;
+}
+
+ol.favMovies {
+  padding: 30px;
+}
+
+ul.resumeTopics {
+  padding: 30px;
 }
