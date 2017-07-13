@@ -21,17 +21,17 @@ function quiz() {
     // react to the user's answer to first question
     if (age === 'YES' || age === 'Y') {
       numCorrect++;
-      alert('That is correct! I am 22 years young. \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('That is correct! I am 22 years young. \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user was correct');
       answered = true;
     } else if (age === 'NO' || age === 'N') {
       numIncorrect++;
-      alert('You are incorrect... I am infact 22 years young. \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('You are incorrect... I am infact 22 years young. \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user was incorrect');
       answered = true;
     } else {
       numInvalid++;
-      alert('Please enter yes/no.  Thank you! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('Please enter yes/no.  Thank you! \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user did not input either yes or no');
     }
 
@@ -50,17 +50,17 @@ function quiz() {
     // reaction to second question
     if (birthPlace === 'YES' || birthPlace === 'Y') {
       numIncorrect++;
-      alert('That is incorrect.  I was actually born in Seattle. :/ \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('That is incorrect.  I was actually born in Seattle. :/ \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user was incorrect');
       answered = true;
     } else if (birthPlace === 'NO' || birthPlace === 'N') {
       numCorrect++;
-      alert('That is correct! I wasn\'t born in Miami, I was born in Seattle. :-)\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('That is correct! I wasn\'t born in Miami, I was born in Seattle. :-)\n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user was correct');
       answered = true;
     } else {
       numInvalid++;
-      alert('Please input a response of either yes/no or y/n.  Thank you! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid)
+      alert('Please input a response of either yes/no or y/n.  Thank you! \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid)
       console.log('the user did not input yes/no or y/n');
     }
 
@@ -79,17 +79,17 @@ function quiz() {
     // reaction to third question
     if (major === 'YES' || major === 'Y') {
       numCorrect++;
-      alert('That is correct.  I did graduate from Gonzaga University with a Mechanical Engineering degree.\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('That is correct.  I did graduate from Gonzaga University with a Mechanical Engineering degree.\nCorrect: ' + numCorrect + '\n\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user was correct');
       answered = true;
     } else if (major === 'NO' || major === 'N') {
       numIncorrect++;
-      alert('That is incorrect.  I actually did recieve a degree in Mechanical Engineering from Gonzaga University.\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('That is incorrect.  I actually did recieve a degree in Mechanical Engineering from Gonzaga University.\nCorrect: ' + numCorrect + '\n\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user\'s answer was incorrect')
       answered = true;
     } else {
       numInvalid++;
-      alert('Please enter either Yes/No or Y/N\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('Please enter either Yes/No or Y/N\n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user\'s input was invalid');
     }
 
@@ -108,17 +108,17 @@ function quiz() {
     // reaction to fourth question
     if (eyeColor === 'YES' || eyeColor === 'Y') {
       numIncorrect++;
-      alert('You are incorrect :/.  My eyes are actually hazel.\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('You are incorrect :/.  My eyes are actually hazel.\n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user answered incorrectly');
       answered = true;
     } else if (eyeColor === 'NO' || eyeColor === 'N') {
       numCorrect++;
-      alert('You are correct! My eyes are hazel! :-) \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('You are correct! My eyes are hazel! :-) \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user answered correcly');
       answered = true;
     } else {
       numInvalid++;
-      alert('Please answer either Y/N.  Thanks! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('Please answer either Y/N.  Thanks! \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('The user\'s input was invalid');
     }
 
@@ -137,17 +137,17 @@ function quiz() {
     // reaction to fifth question
     if (interests === 'YES' || interests === 'Y') {
       numCorrect++;
-      alert('You are correct!! Of course I want a software engineering job after graduating from Code Fellows.  Please hire me! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('You are correct!! Of course I want a software engineering job after graduating from Code Fellows.  Please hire me! \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user was correct');
       answered = true;
     } else if (interests === 'NO' || interests === 'N') {
       numIncorrect++;
-      alert('That\'s incorrect :/.  I do want a software engineering job after graduating from Code Fellows. \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('That\'s incorrect :/.  I do want a software engineering job after graduating from Code Fellows. \nCorrect: ' + numCorrect + '\n\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user was incorrect');
       answered = true;
     } else {
       numInvalid++;
-      alert('Please enter either Yes/No or Y/N.  Thank you! \nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
+      alert('Please enter either Yes/No or Y/N.  Thank you! \n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect + '\nInvalid Responses: ' + numInvalid);
       console.log('the user did not submit a valid input');
     }
 
@@ -166,6 +166,8 @@ function quiz() {
     var ans = parseInt(prompt('Guess a number between 1-20. \n\n You have ' + (4 - i) + ' tries left.'));
     console.log('the user guessed ' + ans);
 
+    var invalid = false;
+
     if (i === 3) {
       numIncorrect++;
       console.log('done');
@@ -177,12 +179,19 @@ function quiz() {
     } else if (ans > n) {
       alert('Too high.\n\nGuess again.');
       console.log('too high');
+    } else if (isNaN(ans) === true) {
+      invalid = true;
+      alert('Invalid response, guess a number.')
+      console.log('invalid response');
     } else {
       alert('Too low.\n\nGuess again.');
       console.log('too low');
     }
 
-    i++;
+    if (invalid === false) {
+      i++
+    }
+
     console.log('number of tries: ' + i + '/4');
   }
 
