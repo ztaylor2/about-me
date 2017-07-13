@@ -162,7 +162,7 @@ function quiz() {
 
   // respond to sixth question
   while (i <= 3 && correct === false) {
-    
+
     var ans = parseInt(prompt('Guess a number between 1-20. \n\n You have ' + (4 - i) + ' tries left.'));
     console.log('the user guessed ' + ans);
 
@@ -204,7 +204,7 @@ function quiz() {
     var ans = prompt('Guess the one of the names of my three brothers.  \n\nYou have ' + (6 - x) + ' guesses.');
 
     for(var i = 0; i < myAns.length; i++) {
-      if (ans === myAns[i]) {
+      if (ans.toLowerCase() === myAns[i]) {
         correct = true;
         // alert('correct');
         console.log('correct guess');
