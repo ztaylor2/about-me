@@ -43,13 +43,9 @@ function quiz() {
 
   for(var i = 0; i <= questionArray.length - 1; i++) {
 
+    var ans = prompt(questionArray[i]).toUpperCase();
+
     function question(i) {
-
-      var ans = prompt(questionArray[i]).toUpperCase();
-
-      // if(ans !== correctAnswer[i] || ans !== correctA[i] || ans !== incorrectAnswer[i] || ans !== incorrectA[i]) {
-      //   i--;
-      // }
 
       if(ans === correctAnswer[i] || ans === correctA[i]) {
         numCorrect++;
@@ -61,6 +57,10 @@ function quiz() {
         console.log('got it wrong');
       }
 
+    }
+
+    if(ans !== correctAnswer[i] && ans !== correctA[i] && ans !== incorrectAnswer[i] && ans !== incorrectA[i]) {
+      i--;
     }
 
     question(i);
