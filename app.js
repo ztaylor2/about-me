@@ -8,24 +8,6 @@ function quiz() {
   var numIncorrect = 0;
   var numInvalid = 0;
 
-  function question(i) {
-
-    var ans = prompt(questionArray[i]).toUpperCase();
-
-    if(ans === correctAnswer[i] || ans === correctA[i]) {
-      numCorrect++;
-      alert(correctAlert[i] + '\n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect);
-      console.log('got it right');
-    } else if (ans === incorrectAnswer[i] || ans === incorrectA[i]) {
-      numIncorrect++;
-      alert(wrongAlert[i] + '\n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect);
-      console.log('got it wrong');
-    }
-
-  }
-
-  // defining variables
-
   // define question array
   var questionArray = [];
   questionArray.push('Am I 22 years old?');
@@ -59,13 +41,31 @@ function quiz() {
   wrongAlert.push('You are incorrect :/.  My eyes are actually hazel.');
   wrongAlert.push('That\'s incorrect :/.  I do want a software engineering job after graduating from Code Fellows.');
 
-  // execute questions
-  question(0);
-  question(1);
-  question(2);
-  question(3);
-  question(4);
+  for(var i = 0; i <= questionArray.length - 1; i++) {
 
+    function question(i) {
+
+      var ans = prompt(questionArray[i]).toUpperCase();
+
+      // if(ans !== correctAnswer[i] || ans !== correctA[i] || ans !== incorrectAnswer[i] || ans !== incorrectA[i]) {
+      //   i--;
+      // }
+
+      if(ans === correctAnswer[i] || ans === correctA[i]) {
+        numCorrect++;
+        alert(correctAlert[i] + '\n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect);
+        console.log('got it right');
+      } else if (ans === incorrectAnswer[i] || ans === incorrectA[i]) {
+        numIncorrect++;
+        alert(wrongAlert[i] + '\n\nCorrect: ' + numCorrect + '\nIncorrect: ' + numIncorrect);
+        console.log('got it wrong');
+      }
+
+    }
+
+    question(i);
+
+  }
 
 
   // sixth question
