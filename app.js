@@ -32,7 +32,6 @@ function quiz() {
   correctAlert.push('You are correct! My eyes are hazel!');
   correctAlert.push('You are correct!! Of course I want a software engineering job after graduating from Code Fellows.  Please hire me!');
 
-
   // define incorrect alerts
   var wrongAlert = [];
   wrongAlert.push('You are incorrect... I am infact 22 years young.');
@@ -41,6 +40,8 @@ function quiz() {
   wrongAlert.push('You are incorrect :/.  My eyes are actually hazel.');
   wrongAlert.push('That\'s incorrect :/.  I do want a software engineering job after graduating from Code Fellows.');
 
+
+  // run through each question in the quiz until there are no more questions left
   for(var i = 0; i <= questionArray.length - 1; i++) {
 
     var ans = prompt(questionArray[i]).toUpperCase();
