@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+h3 {
+  padding: 10px;
+}
+
 ul.navBar {
   list-style-type: none;
   display: block;
@@ -88,9 +92,22 @@ h2 {
 }
 
 ol.favMovies {
-  padding: 30px;
+  padding: 60px;
 }
 
 ul.resumeTopics {
-  padding: 30px;
+  padding: 60px;
+}
+
+ul.resumeSkills {
+  padding-left: 30px;
+}
+
+li {
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: lighter;
+  text-decoration: underline;
 }
